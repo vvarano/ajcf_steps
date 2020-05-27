@@ -2,6 +2,7 @@
 #include <iostream>
 #include "calc.hpp"
 #include "calcsuper.hpp"
+#include <fmt/format.h>
 
 int main()
 {
@@ -10,5 +11,6 @@ int main()
     std::cout << "double de 5 = " << calcul_double(5) << "\n";
 
     print_curr_date();
+    fmt::print("The result is {}.\n", 42);
     return 0;
 }
